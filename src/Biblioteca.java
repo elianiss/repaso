@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 // Clase Biblioteca
 class Biblioteca {
     private Map<String, Libro> coleccionLibros;
