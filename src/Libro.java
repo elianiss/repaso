@@ -2,16 +2,16 @@ public class Libro {
     private String codigo;
     private String titulo;
     private String autor;
-    private int añoPublicacion;
+    private int anioPublicacion;
 
     public Libro() {
     }
 
-    public Libro(String autor, int añoPublicacion, String codigo, String titulo) {
-        this.autor = autor;
-        this.añoPublicacion = añoPublicacion;
+    public Libro(String codigo, String titulo, String autor, int anioPublicacion) {
         this.codigo = codigo;
         this.titulo = titulo;
+        this.autor = autor;
+        this.anioPublicacion = anioPublicacion; // Cambiado
     }
 
     public String getAutor() {
@@ -22,12 +22,12 @@ public class Libro {
         this.autor = autor;
     }
 
-    public int getAñoPublicacion() {
-        return añoPublicacion;
+    public int getAnioPublicacion() { // Cambiado
+        return anioPublicacion;
     }
 
-    public void setAñoPublicacion(int añoPublicacion) {
-        this.añoPublicacion = añoPublicacion;
+    public void setAnioPublicacion(int anioPublicacion) { // Cambiado
+        this.anioPublicacion = anioPublicacion;
     }
 
     public String getCodigo() {
@@ -50,10 +50,9 @@ public class Libro {
     public String toString() {
         return "Libro{" +
                 "autor='" + autor + '\'' +
-                ", añoPublicacion=" + añoPublicacion +
+                ", anioPublicacion=" + anioPublicacion + // Cambiado
                 ", codigo='" + codigo + '\'' +
                 ", titulo='" + titulo + '\'' +
                 '}';
     }
-
 }
